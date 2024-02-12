@@ -5,9 +5,3 @@
     ansible.builtin.debug:
       msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
 
-# - name: variables from prompt
-#   hosts: localhost
-#   tasks:
-#   - name: Printing the values from prompt
-#     ansible.builtin.debug:
-#       msg: "username is: {{USERNAME}}, password is {{PASSWORD}}"
