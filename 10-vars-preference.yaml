@@ -1,7 +1,7 @@
 - name: variables from play level
   hosts: localhost
-  vars_files:
-  - variables.yaml
+  # vars_files:
+  # - variables.yaml
   vars_prompt:
   - name: PERSON
     prompt: please enter your wishes
@@ -22,7 +22,7 @@
 
 #CMD Level
 #TASK Level
-#CMD Level
+#FILE Level
 #CMD Level
 #CMD Level
 #CMD Level
