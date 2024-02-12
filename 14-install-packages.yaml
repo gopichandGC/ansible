@@ -13,8 +13,8 @@
   #   - mongodb
   - name: install or uninstall packages
     ansible.builtin.package:
-      name: "{{item}}"
-      state: present
+      name: "{{item.name}}"
+      state: "{{item.state}}"
     loop:
     - {name: 'git', state: 'absent'}
     - {name: 'mysql', state: 'absent'}
