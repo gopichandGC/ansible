@@ -9,9 +9,9 @@
   # - name: WISHES
   #   prompt: please enter your wishes
   #   private: true
-  vars:
-    PERSON: "Gopi from play"
-    WISHES: "Morning from play"
+  # vars:
+  #   PERSON: "Gopi from play"
+  #   WISHES: "Morning from play"
   tasks:
   - name: check variables
     # vars:
@@ -20,9 +20,9 @@
     ansible.builtin.debug:
       msg: "Hello {{PERSON}}, Good {{WISHES}}"
 
-#CMD Level
-#TASK Level
-#FILE Level
-#Prompt Level
-#CMD Level
-#CMD Level
+#1.CMD Level
+#2.TASK Level
+#3.FILE Level
+#4.Prompt Level
+#5.Play Level
+#6.CMD Level
