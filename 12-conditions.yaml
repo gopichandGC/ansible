@@ -17,6 +17,5 @@
   - name: create user
     ansible.builtin.user:
       name: roboshop
-    when user.rc!=0
-     #msg: "USER op is: {{user}}"
+    when: user.rc != 0
   
