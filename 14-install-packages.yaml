@@ -2,12 +2,21 @@
   hosts: localhost
   become: yes
   tasks:
-  - name: printing the installed packages
+  # - name: printing the installed packages
+  #   ansible.builtin.package:
+  #     name: "{{item}}"   # Item is a default keyword
+  #     state: present 
+  #   loop:
+  #   - git
+  #   - mysql
+  #   - postfix
+  #   - mongodb
+  - name: install or uninstall packages
     ansible.builtin.package:
-      name: "{{item}}"   # Item is a default keyword
-      state: present 
+      name: "{{item}}"
+      state: present
     loop:
-    - git
-    - mysql
-    - postfix
-    - mongodb
+    - {name: 'git', state: 'absent'}
+    - {name: 'mysql', state: 'absent'}
+    - {name: 'yum', state: 'present'}
+    - {name: 'nginx', state: 'present'}
