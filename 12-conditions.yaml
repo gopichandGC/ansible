@@ -7,4 +7,4 @@
 
   - name: print variable values
     ansible.builtin.debug:
-     msg: "USER op is: {{user}}
+     msg: "USER op is: {{user}}"
