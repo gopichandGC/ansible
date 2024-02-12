@@ -14,8 +14,15 @@
     WISHES: "Morning from play"
   tasks:
   - name: check variables
-    vars:
-      PERSON: "Gopi from task"
-      WISHES: "Morning from task"
+    # vars:
+    #   PERSON: "Gopi from task"
+    #   WISHES: "Morning from task"
     ansible.builtin.debug:
       msg: "Hello {{PERSON}}, Good {{WISHES}}"
+
+#CMD Level
+#TASK Level
+#CMD Level
+#CMD Level
+#CMD Level
+#CMD Level
